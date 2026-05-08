@@ -1,0 +1,21 @@
+{
+  "storeName": "Sudan Heritage",
+  "storeDescription": "Bringing the authentic warmth, rich textures, and traditional craftsmanship of Sudan directly to your home. Hand-selected with love and pride.",
+  "whatsappNumber": "+249912345678",
+  "email": "hello@sudanheritage.example.com",
+  "location": "Omdurman Souq, Khartoum, Sudan",
+  "hours": "Sat - Thu, 9:00 AM - 6:00 PM (CAT)",
+  "categories": ["Spices", "Textiles", "Crafts", "Natural Products", "Food", "Jewelry", "Other"],
+  "categoryTranslations": {
+    "Spices": "التوابل",
+    "Textiles": "المنسوجات",
+    "Crafts": "الحرف اليدوية",
+    "Natural Products": "المنتجات الطبيعية",
+    "Food": "الطعام",
+    "Jewelry": "المجوهرات",
+    "Other": "أخرى"
+  },
+  "facebookUrl": "",
+  "instagramUrl": "",
+  "xUrl": ""
+}

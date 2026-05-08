@@ -1,0 +1,259 @@
+export type ProductCategory = string;
+
+export interface Product {
+  id: string;
+  name: string;
+  nameAr?: string;
+  description: string;
+  descriptionAr?: string;
+  price: number;
+  category: ProductCategory;
+  imageUrl: string;
+  quantity: number;
+  whatsappNumber: string;
+  featured: boolean;
+  createdAt: string;
+}
+
+export const initialProducts: Product[] = [
+  {
+    id: "prod-1",
+    name: "Raw Shea Butter (Gonkoy)",
+    nameAr: "زبدة الشيا الطبيعية (القنقوي)",
+    description:
+      "Pure, unrefined shea butter sourced directly from local cooperatives in Sudan. Rich in vitamins A and E, excellent for skin hydration and healing. Hand-processed using traditional methods.",
+    descriptionAr:
+      "زبدة شيا نقية غير مكررة، مستخرجة مباشرة من التعاونيات المحلية في السودان. غنية بالفيتامينات أ وهـ، ممتازة لترطيب البشرة وتعزيز صحتها. معالجة يدوياً بأساليب تقليدية.",
+    price: 15.0,
+    category: "Natural Products",
+    imageUrl: "https://picsum.photos/seed/sheabutter/600/400",
+    quantity: 50,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-01-10").toISOString(),
+  },
+  {
+    id: "prod-2",
+    name: "Sudanese Myrrh (Morr)",
+    nameAr: "المر السوداني",
+    description:
+      "Premium quality natural myrrh resin collected from the wild Commiphora myrrha trees. Used for its aromatic, medicinal, and purifying properties in traditional Sudanese homes.",
+    descriptionAr:
+      "مر طبيعي عالي الجودة، مجمع من أشجار الكوميفورا البرية. يستخدم لخواصه العطرية والطبية والتطهيرية في البيوت السودانية التقليدية.",
+    price: 25.0,
+    category: "Spices",
+    imageUrl: "https://picsum.photos/seed/myrrh/600/400",
+    quantity: 30,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-02-15").toISOString(),
+  },
+  {
+    id: "prod-3",
+    name: "Haboba Traditional Coffee",
+    nameAr: "قهوة حبوبة التقليدية",
+    description:
+      "Authentic Sudanese coffee blend roasted with cardamom, ginger, and cloves. This is the coffee of grandmothers and celebration — bold, aromatic, and deeply warming.",
+    descriptionAr:
+      "مزيج قهوة سوداني أصيل محمص مع الهيل والزنجبيل والقرنفل. هذه قهوة الجدات والاحتفالات — قوية وعطرة وتُدفئ القلب.",
+    price: 12.5,
+    category: "Food",
+    imageUrl: "https://picsum.photos/seed/coffeebeans/600/400",
+    quantity: 80,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-03-20").toISOString(),
+  },
+  {
+    id: "prod-4",
+    name: "Karkade (Hibiscus Flowers)",
+    nameAr: "الكركديه (زهور الخُبيزة)",
+    description:
+      "Dried hibiscus petals harvested in the Sudanese countryside. Brew hot or cold for a stunning deep-red drink rich in antioxidants. A beloved Sudanese staple, known locally as Karkade.",
+    descriptionAr:
+      "بتلات كركديه مجففة محصودة من الريف السوداني. تُحضَّر ساخنة أو باردة للحصول على مشروب أحمر داكن غني بمضادات الأكسدة. من أحب المشروبات السودانية.",
+    price: 8.0,
+    category: "Food",
+    imageUrl: "https://picsum.photos/seed/hibiscus/600/400",
+    quantity: 120,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-04-05").toISOString(),
+  },
+  {
+    id: "prod-5",
+    name: "Handwoven Nubian Basket",
+    nameAr: "سلة نوبية منسوجة يدوياً",
+    description:
+      "Traditional colorful baskets handwoven by Nubian artisans using natural palm fibers. Each basket is unique, carrying the geometric patterns of ancient Nubian culture.",
+    descriptionAr:
+      "سلال ملونة تقليدية تُنسج يدوياً بواسطة حرفيين نوبيين من ألياف النخيل الطبيعية. كل سلة فريدة، تحمل الأنماط الهندسية لثقافة النوبة العريقة.",
+    price: 35.0,
+    category: "Crafts",
+    imageUrl: "https://picsum.photos/seed/wovenbasketsudanese/600/400",
+    quantity: 15,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-05-01").toISOString(),
+  },
+  {
+    id: "prod-6",
+    name: "Sudanese Gum Arabic",
+    nameAr: "الصمغ العربي السوداني",
+    description:
+      "Pure gum arabic from acacia trees in the Sahel region of Sudan. Renowned worldwide for its quality, used in traditional cooking, beverages, and natural wellness practices.",
+    descriptionAr:
+      "صمغ عربي نقي من أشجار الأكاسيا في منطقة الساحل بالسودان. مشهور عالمياً بجودته الفائقة، يُستخدم في الطبخ التقليدي والمشروبات وممارسات العافية الطبيعية.",
+    price: 18.0,
+    category: "Natural Products",
+    imageUrl: "https://picsum.photos/seed/gumarabic/600/400",
+    quantity: 60,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-06-15").toISOString(),
+  },
+  {
+    id: "prod-7",
+    name: "Nubian Silver Bangle",
+    nameAr: "سوار الفضة النوبي",
+    description:
+      "Hand-crafted silver bangle inspired by ancient Nubian jewelry traditions. Engraved with traditional geometric motifs. A wearable piece of Sudanese heritage.",
+    descriptionAr:
+      "سوار فضة مصنوع يدوياً مستوحى من تقاليد المجوهرات النوبية القديمة. محفور بزخارف هندسية تقليدية. قطعة تراث سوداني أصيل يمكن ارتداؤها.",
+    price: 65.0,
+    category: "Jewelry",
+    imageUrl: "https://picsum.photos/seed/silverbangle/600/400",
+    quantity: 8,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-07-10").toISOString(),
+  },
+  {
+    id: "prod-8",
+    name: "Melon Seeds (Aseeda Mix)",
+    nameAr: "بذور البطيخ (خلطة العصيدة)",
+    description:
+      "Sun-dried melon seeds — a beloved Sudanese snack and a key ingredient in traditional soups and stews. Lightly salted, sourced from family farms in Kordofan.",
+    descriptionAr:
+      "بذور بطيخ مجففة على الشمس — وجبة خفيفة سودانية محبوبة ومكون رئيسي في الشوربات والطواجن التقليدية. مملحة بلطف، من مزارع عائلية في كردفان.",
+    price: 6.0,
+    category: "Food",
+    imageUrl: "https://picsum.photos/seed/melonseeds/600/400",
+    quantity: 200,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-08-20").toISOString(),
+  },
+  {
+    id: "prod-9",
+    name: "Sudanese Medjool Dates",
+    nameAr: "تمر المجهول السوداني",
+    description:
+      "Plump, succulent Medjool dates grown in the rich soils of the Nile Valley in northern Sudan. Naturally sweet with a deep caramel flavour. Boxed and gift-ready.",
+    descriptionAr:
+      "تمر مجهول ممتلئ وطري، ينمو في التربة الخصبة لوادي النيل في شمال السودان. حلو بشكل طبيعي بنكهة كراميل عميقة. معبأ وجاهز كهدية مميزة.",
+    price: 22.0,
+    category: "Food",
+    imageUrl: "https://picsum.photos/seed/medjool/600/400",
+    quantity: 45,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-09-01").toISOString(),
+  },
+  {
+    id: "prod-10",
+    name: "Hand-dyed Toub Fabric",
+    nameAr: "قماش الثوب المصبوغ يدوياً",
+    description:
+      "A metre of traditional Sudanese Toub fabric, hand-dyed using natural pigments in vibrant earth and jewel tones. Perfect for tailoring or as a decorative textile.",
+    descriptionAr:
+      "قطعة من قماش الثوب السوداني التقليدي، مصبوغة يدوياً باستخدام أصباغ طبيعية بألوان ترابية وجوهرية زاهية. مثالية للخياطة أو كمنسوجات زخرفية.",
+    price: 45.0,
+    category: "Textiles",
+    imageUrl: "https://picsum.photos/seed/fabrictoub/600/400",
+    quantity: 20,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-10-15").toISOString(),
+  },
+  {
+    id: "prod-11",
+    name: "Bakhoor Incense (Oud Blend)",
+    nameAr: "بخور (خلطة العود)",
+    description:
+      "Traditional Sudanese bakhoor — a blend of oud wood, myrrh, rose water, and oils formed into fragrant nuggets. Burn over charcoal to fill your home with this timeless aroma.",
+    descriptionAr:
+      "البخور السوداني التقليدي — مزيج من خشب العود والمر وماء الورد والزيوت العطرية، مشكّلاً في كتل معطرة. يُحرق فوق الفحم لملء بيتك بهذه الرائحة الخالدة.",
+    price: 30.0,
+    category: "Natural Products",
+    imageUrl: "https://picsum.photos/seed/bakhoor/600/400",
+    quantity: 35,
+    whatsappNumber: "+249912345678",
+    featured: true,
+    createdAt: new Date("2023-11-05").toISOString(),
+  },
+  {
+    id: "prod-12",
+    name: "Fenugreek Seeds (Hilba)",
+    nameAr: "بذور الحلبة",
+    description:
+      "Organic fenugreek seeds (Hilba) from Sudan's fertile agricultural regions. A Sudanese kitchen staple used in stews, breads, and as a health supplement for generations.",
+    descriptionAr:
+      "بذور حلبة عضوية من المناطق الزراعية الخصبة في السودان. ثابتة في المطبخ السوداني، تستخدم في الطواجن والخبز وكمكمل صحي منذ أجيال.",
+    price: 5.0,
+    category: "Spices",
+    imageUrl: "https://picsum.photos/seed/fenugreek/600/400",
+    quantity: 150,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2023-12-01").toISOString(),
+  },
+  {
+    id: "prod-13",
+    name: "Embroidered Leather Pouch",
+    nameAr: "محفظة جلدية مطرزة",
+    description:
+      "A small leather pouch hand-stitched by artisans in El Obeid, embroidered with colourful thread in traditional Kordofani patterns. Perfect for storing jewelry or as a gift.",
+    descriptionAr:
+      "حقيبة جلدية صغيرة مخيطة يدوياً بواسطة حرفيين في الأبيض، مطرزة بخيوط ملونة بالأنماط الكردفانية التقليدية. مثالية لحفظ المجوهرات أو كهدية.",
+    price: 28.0,
+    category: "Crafts",
+    imageUrl: "https://picsum.photos/seed/leatherpouch/600/400",
+    quantity: 12,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2024-01-08").toISOString(),
+  },
+  {
+    id: "prod-14",
+    name: "Black Seed Oil (Habbatus Sauda)",
+    nameAr: "زيت حبة البركة",
+    description:
+      "Cold-pressed Nigella Sativa (black seed) oil from Sudanese farms. Revered for centuries for its powerful health properties. 100% pure, no additives or preservatives.",
+    descriptionAr:
+      "زيت النيجيلا (حبة البركة) المعصور بالبرد من مزارع سودانية. مُبجَّل منذ قرون لخواصه الصحية القوية. نقي 100%، بدون إضافات أو مواد حافظة.",
+    price: 20.0,
+    category: "Natural Products",
+    imageUrl: "https://picsum.photos/seed/blackseedoil/600/400",
+    quantity: 40,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2024-02-14").toISOString(),
+  },
+  {
+    id: "prod-15",
+    name: "Sudanese Sesame Paste (Tahini)",
+    nameAr: "طحينة السمسم السودانية",
+    description:
+      "Freshly stone-ground tahini made from premium Sudanese white sesame seeds — the world's finest. Smooth, nutty, and deeply flavourful. Ideal for hummus, dressings, and dips.",
+    descriptionAr:
+      "طحينة مطحونة حجرياً طازجة من بذور السمسم الأبيض السوداني الفاخر — الأفضل في العالم. ناعمة ومكسراتية وغنية النكهة. مثالية للحمص والصلصات.",
+    price: 14.0,
+    category: "Food",
+    imageUrl: "https://picsum.photos/seed/sesamepaste/600/400",
+    quantity: 55,
+    whatsappNumber: "+249912345678",
+    featured: false,
+    createdAt: new Date("2024-03-20").toISOString(),
+  },
+];
